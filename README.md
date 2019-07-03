@@ -21,7 +21,8 @@ print(unigrams)
 bigrams = classifier.inputBigrams
 print(bigrams)
 
-#find the bigram probabilities of Spam and Ham  
+#find the bigram probabilities of Spam and Ham 
+
 spam_probability = classifier.bigramPSpam
 print(spam_probability)
 
