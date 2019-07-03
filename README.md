@@ -1,11 +1,35 @@
 # bigram-spam-classifier
 A bigram approach for classifying Spam and Ham messages
 
-Clone the repository 
+#install with pip 
+pip install bigram-spam-classifier
 
-Install the dependencies from requirements.txt
+#import in your python file
+from bigram_spam_classifier import spamclassifier
 
-Run the main.py file
+#create an object of the classifier and pass your message as the parameter
+classifier = spamclassifier.classifier("Customer service annoncement. You have a New Years delivery waiting for you. Please call 07046744435 now to arrange delivery")
 
-Enter your message to find out whether it is Spam or Ham
+#classify the message
+cls = classifier.classify()
 
+print(cls)
+
+#find the unigrams and bigrams in the message 
+unigrams = classifier.inputUnigrams
+
+print(unigrams)
+
+
+bigrams = classifier.inputBigrams
+
+print(bigrams)
+
+#find the bigram probabilities of Spam and Ham  
+spam_probability = classifier.bigramPSpam
+
+print(spam_probability)
+
+ham_probability = classifier.bigramPHam
+
+print(ham_probability)

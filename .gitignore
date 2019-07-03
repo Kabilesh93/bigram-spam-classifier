@@ -1,1 +1,4 @@
 /venv
+/bigram_spam_classifier.egg-info
+/build
+/dist

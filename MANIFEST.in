@@ -1,0 +1,3 @@
+include README.md
+include LICENSE
+include bigram_spam_classifier/data/spam_collection.csv
