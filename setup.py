@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="bigram_spam_classifier",
-    version="0.0.5",
+    version="0.0.6",
     author="Kabilesh",
     author_email="",
     description="A bigram approach for classifying Spam and Ham messages",
